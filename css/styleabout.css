@@ -1,0 +1,58 @@
+/* Fontes Imports */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap'); /* font-family: 'Quicksand', sans-serif; */
+
+body {
+    background-color: #1c1c39 !important;
+    color: white !important;
+}
+
+.container_style {
+    font-family: 'Quicksand', sans-serif;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    padding-top: 80px;
+    background: linear-gradient(120deg, #1c1c39, #2e2e75) !important;
+    border-radius: 20px;
+}
+
+.title_style {
+    cursor: default;
+    min-width: auto;
+    max-width: 300px;
+    height: 80px;
+    font-size: 18px;
+    background: linear-gradient(to left, #5180ff, #ff66c4);
+    border: none;
+    border-radius: 5px;
+    transition: background 0.5s, transform 0.8s;
+    /* Adiciona a transição para a propriedade de fundo */
+}
+
+.title_style:hover {
+    transform: scale(1.1);
+    background: linear-gradient(to right, #5180ff, #ff66c4);
+    /* Altera o gradiente no hover */
+    background-size: 400% 400%;
+    /* Aumenta o tamanho do degradê */
+    animation: gradientEffect 3s ease infinite;
+    /* Adiciona a animação ao degradê */
+}
+
+/* Animação de degradê do botão*/
+@keyframes gradientEffect {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.subtitle_style {
+    font-weight: bolder;
+}

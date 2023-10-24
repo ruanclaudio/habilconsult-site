@@ -1,0 +1,102 @@
+/* Fonts Imports */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap'); /* font-family: 'Quicksand', sans-serif; */
+
+
+/* Gerais */
+body {
+  background-image: url(../addons/background-homepage.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  
+}
+
+@media (max-width: 767px) {
+  body {
+    background-image: none;
+    background-color: #1c1c39 !important;
+    background-attachment: scroll;
+  }
+}
+
+header {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 400;
+}
+
+/* Página Principal */
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  position: relative;
+  overflow: hidden;
+  height: 100vh; /* Ajusta a altura conforme necessário */
+}
+
+/*Edição da imagem e video*/
+.container {
+  text-align: center;
+  flex-basis: 50%;
+  animation: fadeIn 1s ease-in;
+}
+
+.video-container {
+  width: 300px;
+  height: 300px;
+  margin-top: 50px;
+  flex-basis: 50%;
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 991.98px) {
+  .video-container {
+    width: 200px;
+    height: 200px;
+    flex-basis: 100%;
+  }
+
+  p {
+    font-size: 14px; /* Tamanho do texto menor para dispositivos móveis */
+  }
+}
+
+p {
+  color: var(--white-standard);
+  font-size: 18px;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 300;
+  pointer-events: none;
+}
+
+.image_style {
+  width: 450px;
+  pointer-events: none;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Scrollbar Personalizada*/
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: var(--white-standard); 
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--purple-color1); 
+}
