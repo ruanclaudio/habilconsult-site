@@ -42,6 +42,10 @@
   transition: background 0.5s, transform 0.5s; /* Adiciona a transição para a propriedade de fundo */
 }
 
+#partner-btn a {
+  text-decoration: none; /* Remove o sublinhado */
+  color: inherit; /* Herda a cor do texto do elemento pai */
+}
 #partner-btn:hover {
   transform: scale(1.1);
   background: linear-gradient(to right, #5180ff, #ff66c4); /* Altera o gradiente no hover */
@@ -70,3 +74,18 @@
   }
 }
 /* Fim da Navbar */
+
+/* Scrollbar Personalizada*/
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: var(--white-standard); 
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--purple-color1); 
+}

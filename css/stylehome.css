@@ -42,8 +42,8 @@ header {
 }
 
 .video-container {
-  width: 300px;
-  height: 300px;
+  width: 400px;
+  height: 400px;
   margin-top: 50px;
   flex-basis: 50%;
   display: flex;
@@ -64,10 +64,7 @@ header {
 
 p {
   color: var(--white-standard);
-  font-size: 18px;
   font-family: 'Quicksand', sans-serif;
-  font-weight: 300;
-  pointer-events: none;
 }
 
 .image_style {
@@ -86,17 +83,3 @@ p {
   }
 }
 
-/* Scrollbar Personalizada*/
-::-webkit-scrollbar {
-  width: 12px;
-}
-
-/* Track */
-::-webkit-scrollbar-track {
-  background: var(--white-standard); 
-}
-
-/* Handle */
-::-webkit-scrollbar-thumb {
-  background: var(--purple-color1); 
-}

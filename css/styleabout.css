@@ -15,6 +15,7 @@ body {
     border-radius: 20px;
 }
 
+/*Edição do titulo*/
 .title_style {
     cursor: default;
     min-width: auto;
@@ -26,16 +27,57 @@ body {
     border-radius: 5px;
     transition: background 0.5s, transform 0.8s;
     /* Adiciona a transição para a propriedade de fundo */
+    animation: gradientEffect 3s linear infinite;
+    /* Adiciona a animação ao degradê */
+    background-size: 400% 100%;
+    /* Aumenta o tamanho do degradê */
 }
 
-.title_style:hover {
+@keyframes gradientEffect {
+    0% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 100% 50%;
+    }
+}
+
+/*Overlay da Imagem*/
+.overlay-image {
+    position: absolute;
+    top: 225px;
+    right: 0px;
+    width: 625px; /* ajuste o tamanho conforme necessário */
+    height: 600px; /* ajuste o tamanho conforme necessário */
+    align-items: end;
+}
+
+.partner-button {
+    position: absolute;
+    color: white;
+    background: linear-gradient(to left, #5180ff, #ff66c4);
+    transition: background 0.5s, transform 0.8s;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 30px;
+    float: right;
+    top: 820px;
+    right: 200px;
+
+}
+
+.partner-button:hover {
     transform: scale(1.1);
     background: linear-gradient(to right, #5180ff, #ff66c4);
-    /* Altera o gradiente no hover */
     background-size: 400% 400%;
-    /* Aumenta o tamanho do degradê */
     animation: gradientEffect 3s ease infinite;
-    /* Adiciona a animação ao degradê */
+}
+.partner-button p {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    margin-left: 60px;
+    
 }
 
 /* Animação de degradê do botão*/
@@ -50,6 +92,25 @@ body {
 
     100% {
         background-position: 0% 50%;
+    }
+}
+
+/* Estilos para a versão mobile */
+@media (max-width: 1653px) {
+    .overlay-image {
+        display: none; /* Esconde a imagem na versão mobile */
+    }
+
+    .partner-button {
+        position: relative;
+        top: 0;
+        right: 0;
+        margin-top: 20px; /* Define uma margem para separar o botão dos textos */
+        float: none;
+        align-items: center;
+    }
+    .partner-button p {
+        margin-left: 0;
     }
 }
 
