@@ -1,15 +1,17 @@
+/* Imports */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap'); /* font-family: 'Quicksand', sans-serif; */
+
 /* CASO NECESSÁRIO UTILIZE PARA ADICIONAR O CSS DE ALGO QUE ESTEJA EM MAIS DE UMA PÁGINA PARA NÃO PRECISAR FICAR REPETINDO O CÓDIGO*/ 
 :root {
-    --white-standard: #fff;
     --dark-color1: #1c1c39;
     --dark-color2: #000;
     --purple-color1: #9b59b6;
+    --purple-color2: #660fc8;
+    --purple-color3: #a393ff;
+    --purple-color4: #6351ce;
     --pink-color1: #ff66c4;
 
 }
-
-/* Fonts Imports */
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap'); /* font-family: 'Quicksand', sans-serif; */
 
 /* Edições da navbar */
 .navbar {
@@ -17,7 +19,7 @@
 }
 
 .navbar a.nav-link {
-  color: var(--white-standard); /* Cor do texto padrão */
+  color: white; /* Cor do texto padrão */
   transition: color 0.3s, border-bottom 0.3s; /* Transição suave de cor e linha */
   border-bottom: 2px solid transparent; /* Linha inferior transparente inicial */
 }
@@ -82,7 +84,7 @@
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: var(--white-standard); 
+  background: white; 
 }
 
 /* Handle */
