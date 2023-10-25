@@ -1,0 +1,24 @@
+/* Imports */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap'); /* font-family: 'Quicksand', sans-serif; */
+@import url('util.css');
+
+body {
+    background-color: var(--dark-color1) !important;
+}
+
+.card_style {
+    background-color: var(--purple-color4) !important;
+    color: white !important;
+    font-family: 'Quicksand', sans-serif;
+    font-size: larger !important;
+    transition: 0.5s, transform 0.8s;
+}
+
+.card_style:hover {
+    transform: scale(1.05);
+}
+
+.title_style {
+    font-size: 25px;
+    font-weight: bolder;
+}
