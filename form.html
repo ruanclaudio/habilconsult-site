@@ -17,8 +17,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <!-- CSS -->
-    <link rel="stylesheet" href="css/style-prof.css">
-    <title>Profissionais</title>
+    <link rel="stylesheet" href="css/style-forms.css">
+    <title>Contatos</title>
 </head>
 
 <body>
@@ -58,85 +58,40 @@
         </nav>
     </header>
 
-    <main class="container" style="margin-bottom: 10%; padding-top: 120px;">
-        <div class="row">
-            <div class="col-md-4 mb-4">
-                <div class="card card_style">
-                    <div class="card-body">
-                        <h5 class="card-title text-center title_style">Entusiasta</h5>
-                        <p class="card-text">
-                            Adora explorar novas abordagens e está sempre em busca de maneiras inovadoras de promover
-                            pequenas empresas de forma única e envolvente. Sempre ligada às mídias sociais e às últimas
-                            tendências do marketing digital. Ela segue influenciadores do setor e participa ativamente
-                            de
-                            grupos online para se manter atualizada sobre as melhores práticas.
-                        </p>
-                        <p class="card-text"><small><img src="addons/profile_image.svg.png"> Naomi</small></p>
-                        <p class="card-text"><small class="subtitle_style">
-                                Profissional de Marketing
-                                <br>
-                                <p class="star_style d-flex align-items-center justify-content-center">⭐⭐⭐⭐⭐</p>
-                            </small></p>
-                        <div class="button_style text-center d-flex align-items-center justify-content-center">
-                            <a href="" target="_blank"
-                                class="link_style">
-                                <h4>Portfólio</h4>
-                            </a>
-                        </div>
-                    </div>
-                </div>
+    <main class="container" style="margin-bottom: 15%; padding-top: 200px;">
+        <h5 class="title-text">Atendimento</h5>
+        <form>
+            <div class="form-group mt-2">
+                <label for="exampleFormControlInput1">E-mail:</label>
+                <input type="email" class="form-control" id="emailForm" placeholder="name@example.com" required>
             </div>
+            <div class="form-group mt-2">
+                <label for="phoneForm">Telefone:</label>
+                <input type="text" class="form-control" id="phoneForm" placeholder="(99) 9 9999-9999"
+                    pattern="[0-9]{10,11}" required>
+            </div>
+            <div class="form-group mt-2">
+                <label for="exampleFormControlTextarea1">Razão Social:</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="1" placeholder="Digite o nome da sua razão social" required></textarea>
+            </div>
+            <div class="form-group mt-2">
+                <label for="exampleFormControlSelect1">Assunto:</label>
+                <select class="form-control" id="exampleFormControlSelect1" placeholder="...">
+                    <option>Mudança de prazos</option>
+                    <option>Mudança de projeto</option>
+                    <option>Quero alterar meu projeto</option>
+                    <option>outros</option>
+                </select>
+            </div>
+            <div class="form-group mt-2">
+                <label for="exampleFormControlTextarea1">Digite sua mensagem:</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="5" required></textarea>
+            </div>
+            <div class="btn-container d-flex justify-content-center">
+                <button type="submit" class="btn-confirm">Enviar</button>
+            </div>
+        </form>
 
-            <div class="col-md-4 mb-4">
-                <div class="card card_style">
-                    <div class="card-body">
-                        <h5 class="card-title text-center title_style">Especialista Criativo</h5>
-                        <p class="card-text">
-                            Apaixonado pelo mundo do web design e está sempre ansioso para criar
-                            experiências digitais incríveis. Com experiência na área, ele é conhecido por sua habilidade
-                            em
-                            transformar conceitos criativos em designs impressionantes que cativam o público.
-                        </p>
-                        <p class="card-text"><small><img src="addons/profile_image.svg.png"> Luiz</small></p>
-                        <p class="card-text"><small class="subtitle_style">
-                                Web Design
-                                <br>
-                                <p class="star_style d-flex align-items-center justify-content-center">⭐⭐⭐⭐⭐</p>
-                            </small></p>
-                        <div class="button_style text-center d-flex align-items-center justify-content-center">
-                            <a href="" target="_blank"
-                                class="link_style">
-                                <h4>Portfólio</h4>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 mb-4">
-                <div class="card card_style">
-                    <div class="card-body">
-                        <h5 class="card-title text-center title_style">Inovadora</h5>
-                        <p class="card-text">
-                            É uma inovadora quando se trata de análise de dados. Ela está sempre à procura de novas
-                            abordagens e tecnologias que possam aprimorar sua capacidade de descobrir insights únicos e
-                            estratégicos.
-                        </p>
-                        <p class="card-text"><small><img src="addons/profile_image.svg.png"> Hannah</small></p>
-                        <p class="card-text"><small class="subtitle_style">
-                                Analista de Dados
-                                <br>
-                                <p class="star_style d-flex align-items-center justify-content-center">⭐⭐⭐⭐⭐</p>
-                            </small></p>
-                        <div class="button_style text-center d-flex align-items-center justify-content-center">
-                            <a href="" target="_blank"
-                                class="link_style">
-                                <h4>Portfólio</h4>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
     </main>
 
     <!-- Footer -->

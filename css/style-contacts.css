@@ -1,9 +1,76 @@
 /* Imports */
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap'); /* font-family: 'Quicksand', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+/* font-family: 'Quicksand', sans-serif; */
 @import url('util.css');
 
 body {
-    background-color: var(--dark-color1) !important;
-    color: white !important;
+    background-image: url(../addons/background-homepage.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
 }
 
+@media (max-width: 991px) {
+    body {
+      background-image: none;
+      background-color: var(--dark-color1) !important;
+      background-attachment: scroll;
+    }
+  }
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.custom-btn {
+    background: linear-gradient(to left, #5180ff, #ff66c4);
+    color: white;
+    border: none;
+    margin-top: 50px;
+    padding: 10px 20px;
+    font-size: 20px;
+    border-radius: 10px;
+    transition: background 0.5s, transform 0.8s;
+}
+
+.custom-btn:hover {
+    transform: scale(1.1);
+    background: linear-gradient(to right, #5180ff, #ff66c4);
+    /* Altera o gradiente no hover */
+    background-size: 400% 400%;
+    /* Aumenta o tamanho do degradê */
+    animation: gradientEffect 3s ease infinite;
+    /* Adiciona a animação ao degradê */
+}
+
+.card_style {
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+    height: 500px; /* Altura fixa para os cards */
+    overflow: hidden; /* Esconder o conteúdo que ultrapassa a altura definida */
+    display: flex; /* Tornar os cards flexíveis */
+    flex-direction: column; /* Ajustar a direção da flexão para a coluna */
+    background: linear-gradient(120deg, #1c1c39, #3f3f9e) !important;
+    color: white !important;
+    font-family: 'Quicksand', sans-serif;
+    font-size: larger !important;
+    padding-top: 100px;
+    text-align: center;
+
+}
+
+/* Animação de degradê do botão*/
+@keyframes gradientEffect {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}

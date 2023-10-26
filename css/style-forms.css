@@ -1,0 +1,36 @@
+/* Imports */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap'); /* font-family: 'Quicksand', sans-serif; */
+@import url('util.css');
+
+body {
+    background-color: var(--dark-color1);
+    color: white !important;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.title-text {
+    text-align: center;
+    font-size: 42px;
+    margin-bottom: 60px;
+   
+}
+
+.btn-confirm {
+    background-color: var(--purple-color1);
+    border: none;
+    color: white;
+    padding: 20px 40px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 21px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 8px;
+    margin-top: 20px; /* Ajuste conforme necessário */
+}
+
+.btn-confirm:hover {
+    transform: scale(1.1);
+}

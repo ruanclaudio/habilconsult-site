@@ -10,7 +10,7 @@ body {
   
 }
 
-@media (max-width: 767px) {
+@media (max-width: 991px) {
   body {
     background-image: none;
     background-color: var(--dark-color1) !important;
@@ -68,7 +68,7 @@ p {
 }
 
 .image_style {
-  width: 450px;
+  width: 700px;
   pointer-events: none;
 }
 
