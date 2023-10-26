@@ -6,6 +6,11 @@ body {
     background-color: var(--dark-color1);
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
 .card_style {
     background: linear-gradient(120deg, #1c1c39, #3f3f9e) !important;
     color: white !important;

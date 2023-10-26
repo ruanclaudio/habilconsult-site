@@ -7,6 +7,11 @@ body {
     color: white !important;
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
 .container_style {
     font-family: 'Quicksand', sans-serif;
     margin-top: 10%;
@@ -79,7 +84,7 @@ body {
     font-family: 'Quicksand', sans-serif;
     font-weight: 500;
     font-size: 20px;
-    margin-left: 60px;
+        
     
 }
 
@@ -112,6 +117,11 @@ body {
         float: none;
         align-items: center;
     }
+        
+    .partner-button a {
+        margin-left: 0px;
+    }
+    
     .partner-button p {
         margin-left: 0;
     }

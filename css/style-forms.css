@@ -8,6 +8,11 @@ body {
     font-family: 'Quicksand', sans-serif;
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
 .title-text {
     text-align: center;
     font-size: 42px;
