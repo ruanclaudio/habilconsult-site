@@ -3,11 +3,11 @@
 @import url('util.css');
 
 body {
-    background-color: var(--dark-color1) !important;
+    background-color: var(--dark-color1);
 }
 
 .card_style {
-    background-color: var(--purple-color4) !important;
+    background: linear-gradient(120deg, #1c1c39, #3f3f9e) !important;
     color: white !important;
     font-family: 'Quicksand', sans-serif;
     font-size: larger !important;
