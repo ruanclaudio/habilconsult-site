@@ -1,0 +1,6 @@
+DOCUMENTAÇÃO BASÍCA PARA O WEBSITE HÁGIL
+
+Nesse projeto além das tecnologias básicas como HTML, CSS e JavaScript, utilizamos o framework Bootstrap para criar responsibilidade no site como containers que se adapta a telas móveis por exemplo, recomendo dá uma pesquisada no site deles:
+https://getbootstrap.com/
+
+Tentamos deixar o mais documentado possível os arquivos para dar continuidade ao projeto, qualquer dúvida pode mandar
